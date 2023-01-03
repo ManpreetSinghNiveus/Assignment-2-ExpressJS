@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.send("Server Started");
 });
 
 //Create a GET api that returns query param, path param and return both values with info as json
